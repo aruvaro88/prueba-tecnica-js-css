@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  height: 100%;
+  background-color: #0d4479;
+  padding: 40px;
+  background-image: url(./assets/bg-triangles.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+#app {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto; /* Dos columnas de igual tamaño */
+  gap: 20px; /* Espacio entre las columnas */
+  grid-auto-flow: row;
+}
+
+#app > h1 {
+  grid-column: 1 / span 2; /* El h1 ocupará ambas columnas */
+}
+
+#app > h2:nth-child(2),
+#app > div:nth-child(3),
+#app > h2:nth-child(4),
+#app > ul:nth-child(5) {
+  grid-column: 1; /* Coloca h2 Target y su contenido en la primera columna */
+}
+
+#app > h2:nth-child(6),
+#app > div:nth-child(7),
+#app > h2:nth-child(8),
+#app > div:nth-child(9),
+#app > h2:nth-child(10),
+#app > div:nth-child(11) {
+  grid-column: 2; /* Coloca h2 Considerations y su contenido en la segunda columna */
+}
+
+#app::after {
+  content: "";
+  background-image: url("./assets/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#app > h1 {
+  color: #c9d9e8;
+}
+
+#app > h2 {
+  color: #10c1dc;
+}
+
+#app > div {
+  color: white;
+}
+
+ul > li {
+  color: white;
+  margin-left: 24px;
+}
+
+li::marker {
+  color: #10c1dc;
+}
