@@ -133,11 +133,11 @@ li::marker {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   div {
-    font-size: 32px;
+    font-size: 18px;
   }
 
   .column-container {
@@ -152,14 +152,18 @@ li::marker {
     max-width: none;
   }
 
+  .result {
+    height: auto;
+  }
+
   .test-row h2,
   .result h2 {
-    font-size: 56px;
+    font-size: 28px;
   }
 
   .test-row div,
   .result div {
-    font-size: 72px;
+    font-size: 18px;
   }
 
   .result-container {
