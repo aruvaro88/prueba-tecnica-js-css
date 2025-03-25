@@ -17,20 +17,20 @@ body {
 #app {
   position: relative;
   display: grid;
-  grid-template-columns: auto auto; /* Dos columnas de igual tamaño */
-  gap: 20px; /* Espacio entre las columnas */
+  grid-template-columns: auto auto;
+  gap: 20px;
   grid-auto-flow: row;
 }
 
 #app > h1 {
-  grid-column: 1 / span 2; /* El h1 ocupará ambas columnas */
+  grid-column: 1 / span 2;
 }
 
 #app > h2:nth-child(2),
 #app > div:nth-child(3),
 #app > h2:nth-child(4),
 #app > ul:nth-child(5) {
-  grid-column: 1; /* Coloca h2 Target y su contenido en la primera columna */
+  grid-column: 1;
 }
 
 #app > h2:nth-child(6),
@@ -39,7 +39,7 @@ body {
 #app > div:nth-child(9),
 #app > h2:nth-child(10),
 #app > div:nth-child(11) {
-  grid-column: 2; /* Coloca h2 Considerations y su contenido en la segunda columna */
+  grid-column: 2;
 }
 
 #app::after {
