@@ -96,7 +96,10 @@ li::marker {
   text-align: center;
 }
 
-.test-row div,
+.test-row div {
+  font-size: 48px;
+  margin-bottom: 36px;
+}
 .result div {
   font-size: 64px;
   margin-bottom: 36px;
@@ -161,9 +164,11 @@ li::marker {
     font-size: 28px;
   }
 
-  .test-row div,
-  .result div {
+  .test-row div {
     font-size: 18px;
+  }
+  .result div {
+    font-size: 36px;
   }
 
   .result-container {
